@@ -5,27 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Інтернет-магазин</title>
     <style>
-        /* Робимо так, щоб сторінка займала весь екран без зайвих смуг прокрутки */
-        html, body {
+        body {
             margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: #0f172a; /* Темний фон під час завантаження */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #0f172a;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #ffffff;
         }
-        iframe {
-            width: 100%;
-            height: 100%;
+        .btn {
+            background-color: #2563eb;
+            color: white;
+            padding: 14px 28px;
+            font-size: 18px;
+            font-weight: 600;
             border: none;
-            display: block;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+        }
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+        p {
+            margin-bottom: 20px;
+            color: #94a3b8;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
-
-    <!-- ВСТАВ СВОЄ ПОСИЛАННЯ З GOOGLE APPS SCRIPT ЗАМІСТЬ ТЕКСТУ НИЖЧЕ -->
-    <iframe src="https://script.google.com/macros/s/AKfycbyppbu-R0BhWkC4IdXFpPujqJFvWmprfPpb2mNkRvk90cooNW1jkvX_EyWnPBTWSZiy/exec" allow="clipboard-write"></iframe>
-
+    <p>Натисніть кнопку нижче, щоб перейти до каталогу товарів:</p>
+    <!-- ВСТАВ СВОЄ ПОСИЛАННЯ З GOOGLE APPS SCRIPT ЗАМІСТЬ ПОСИЛАННЯ В КАВИЧКАХ -->
+    <a href="https:https://script.google.com/macros/s/AKfycbyppbu-R0BhWkC4IdXFpPujqJFvWmprfPpb2mNkRvk90cooNW1jkvX_EyWnPBTWSZiy/exec" class="btn" target="_blank">Відкрити інтернет-магазин</a>
 </body>
 </html>
